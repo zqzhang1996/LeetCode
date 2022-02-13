@@ -186,7 +186,6 @@ namespace Q1001
                 if (lampList[i].isOn)
                 {
                     lampList[i].isOn = false;
-                    int index;
                     lightList[0][Array.BinarySearch(lightList[0], new Light(lampList[i].row))].count--;
                     lightList[1][Array.BinarySearch(lightList[1], new Light(lampList[i].col))].count--;
                     lightList[2][Array.BinarySearch(lightList[2], new Light(lampList[i].row + lampList[i].col))].count--;
